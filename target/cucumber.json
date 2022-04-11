@@ -1,0 +1,272 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10848631300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have launced the application",
+            "match": {
+              "location": "LoginSteps.i_have_launced_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T18:19:02.584Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5010724600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login Functionality with correct username and password",
+        "description": "",
+        "id": "login-feature-scenarios;verify-login-functionality-with-correct-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 283154100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128584300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enters the username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.i_enters_the_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97580900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enters the password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.i_enters_the_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158368400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I clicks on the login button",
+            "match": {
+              "location": "LoginSteps.i_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1495000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be landed on the product page",
+            "match": {
+              "location": "LoginSteps.i_should_be_landed_on_the_product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10763424500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have launced the application",
+            "match": {
+              "location": "LoginSteps.i_have_launced_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T18:19:19.201Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3682759100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify Login with incorrect username and password",
+        "description": "",
+        "id": "login-feature-scenarios;verify-login-with-incorrect-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 245493200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 165704300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enters the username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.i_enters_the_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95164500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enters the password \"secret_sauce1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce1\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.i_enters_the_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63566800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I clicks on the login button",
+            "match": {
+              "location": "LoginSteps.i_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42585900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should get the \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_should_get_the(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenarios",
+    "description": "",
+    "id": "login-feature-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
